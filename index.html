@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>PaperWebsite</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+   <!-- <link rel="stylesheet" type="text/css" href="paper.css">  -->
+   <link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css">
+</head>
+
+<body>
+
+  <div class="paper container">
+    <nav class="border">
+      <div class="nav-brand">
+        <h4><a target="_blank" href="https://www.getpapercss.com/">My Gallery</a></h4>
+      </div>
+      <div class="collapsible">
+        <input id="collapsible2" type="checkbox" name="collapsible2">
+        <button>
+          <label for="collapsible2">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </label>
+        </button>
+        <div class="collapsible-body">
+          <ul class="inline">
+            <li><a target="_blank" href="https://www.getpapercss.com/docs/content/images/">Images</a></li>
+            <li><a target="_blank" href="https://www.getpapercss.com/docs/components/progress/">Progressbars</a></li>
+            <li><a target="_blank" href="https://www.getpapercss.com/docs/components/modals/">Modals</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <h1 style="text-align: center;">Superawesome <span class="badge warning">Art</span> Gallery</h1>
+    <div class="row">
+      <div class="collapsible">
+        <input id="collapsible1" type="checkbox" name="collapsible">
+        <label for="collapsible1">Welcome to my online art gallery:</label>
+        <div class="collapsible-body">
+          <span>All images were drawn to rise awareness of the coming winter. Please make sure to check out the art and
+            if you like one, please make a purchase. Thank you.</span>
+        </div>
+      </div>
+    </div>
+
+    <img src="./images/paper1.png" class="float-left" style="width:270px;height:200px;">
+    <img src="./images/paper2.png" class="float-left" style="width:270px;height:200px;">
+    <img src="./images/paper3.png" class="float-left" style="width:270px;height:200px;">
+
+    <table class="table-hover">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>Artisit</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Self Portrait</td>
+          <td>Peter Jordanson</td>
+          <td>4999 $</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Winter in L.A.</td>
+          <td>Jyckal Mackson</td>
+          <td>7050 $</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Coool Coffee Beans Tree</td>
+          <td>Banksty Bankerson</td>
+          <td>300 $</td>
+        </tr>
+      </tbody>
+    </table>
+
+
+    <br><br><br>
+    <div>
+      <form style="width: 100%;">
+        <fieldset>
+
+          <legend>Contact me:</legend>
+          <br>
+
+
+          <div>
+            <label for="textinput">Message</label>
+            <div>
+              <input style='width:100%;' id="titelInput" name="textinput" type="text"
+                placeholder="I really liked your gallery man!" required="">
+            </div>
+          </div>
+          <br>
+
+          <div>
+            <label for="name">Your Name</label>
+            <div>
+              <div>
+                <input placeholder="50 Cent" type="text">
+              </div>
+            </div>
+          </div>
+          <br>
+
+          <div>
+            <label for="selectbasic">Reason:</label>
+            <div>
+              <select id="selectbasic" name="selectbasic" class="form-control">
+                <option value="1">How to buy this?</option>
+                <option value="2">How to draw like this?</option>
+              </select>
+            </div>
+          </div>
+          <br>
+          <!-- Button -->
+          <div>
+            <label for="button1id">Send message</label>
+            <div>
+              <button popover-top="You'll get a respond asap!" id="button1id" name="button1id"
+                class="paper-btn btn-success">Send</button>
+            </div>
+          </div>
+
+        </fieldset>
+
+      </form>
+    </div>
+
+    <h1>About <span class="badge">myself:</span></h1>
+
+
+    <div class="card" style="width: 20rem;">
+      <img src="./images/paper1.png" alt="Image of myself">
+
+      <div class="card-body">
+        <h4 class="card-title">Hi my name is Lorem Johnson!</h4>
+        <h5 class="card-subtitle">I hope you enjoyed my gallery.</h5>
+        <p class="card-text">If you want to buy one of my photos just rightclick on one of them and download it.
+          Afterwards please don'
+          t forget to send me a check.</p>
+        <button disabled="true">Complain</button>
+      </div>
+    </div>
+
+</body>
+
+</html>
